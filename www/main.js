@@ -82,28 +82,38 @@ function sendMessage() {
     const lowerMessage = message.toLowerCase();
     allowResponse = true;
 
+    // 🦇 Identity question handled in-character
     const identityQuestions = ["who am i", "what is my name"];
     if (identityQuestions.includes(lowerMessage)) {
+        addMessage('user', message);
         const batReply = "You are Batman. Gotham’s protector, always watching.";
         addMessage('computer', batReply);
         if (!isMuted) speakText(batReply);
+        doneBtn.classList.add('show');
+        body.classList.add('blurred');
+        input.value = '';
         return;
     }
 
+    // 🌐 Search command
     const triggers = ["search up", "look up", "google", "open a new tab and go to", "search for"];
     for (const trigger of triggers) {
         if (lowerMessage.startsWith(trigger)) {
             const query = message.substring(trigger.length).trim();
             if (query) {
+                addMessage('user', message);
                 const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
                 window.open(url, "_blank");
                 addMessage('computer', `Searching for "${query}"...`);
                 doneBtn.classList.add('show');
+                body.classList.add('blurred');
+                input.value = '';
                 return;
             }
         }
     }
 
+    // 🤖 Default message handling
     addMessage('user', message);
     input.value = '';
     body.classList.add('blurred');
