@@ -82,6 +82,14 @@ function sendMessage() {
     const lowerMessage = message.toLowerCase();
     allowResponse = true;
 
+    const identityQuestions = ["who am i", "what is my name"];
+    if (identityQuestions.includes(lowerMessage)) {
+        const batReply = "You are Batman. Gotham’s protector, always watching.";
+        addMessage('computer', batReply);
+        if (!isMuted) speakText(batReply);
+        return;
+    }
+
     const triggers = ["search up", "look up", "google", "open a new tab and go to", "search for"];
     for (const trigger of triggers) {
         if (lowerMessage.startsWith(trigger)) {
