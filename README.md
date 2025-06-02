@@ -54,32 +54,37 @@ BatComputer/
 ├── .env
 ├── main.py
 └── README.md
+```
+
 ---
-**## 🚀 Setup Instructions**
-1. Activate Python virtual environment:
-bash
-Copy
-Edit
+
+## 🚀 Setup Instructions
+
+### 1. Activate Python virtual environment
+```bash
 python3 -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-2. Install Flask Dependencies:
-bash
-Copy
-Edit
+```
+
+### 2. Install Flask Dependencies
+```bash
 pip install flask flask-cors requests
-3. Install and Run Ollama:
-bash
-Copy
-Edit
+```
+
+### 3. Install and Run Ollama
+```bash
 brew install ollama         # macOS (or download from https://ollama.com)
 ollama serve
 ollama run mistral          # Downloads Mistral LLM and runs it locally
-4. Run the Flask Backend:
-bash
-Copy
-Edit
+```
+
+### 4. Run the Flask Backend
+```bash
 python main.py
+```
+
 ---
+
 ## 🗺️ **Deployment Notes**
 
 The frontend is deployed on Vercel at:  
@@ -91,7 +96,7 @@ If you want global access to the assistant, consider deploying the Flask + Ollam
 
 ---
 
-### 📸 **Screenshots**
+## 📸 **Screenshots**
 
 #### 🔧 Main Hub  
 <img width="749" alt="Main Hub" src="https://github.com/user-attachments/assets/d78e656f-113a-4fb2-ae5a-c5a0c6ee0637" />
