@@ -80,20 +80,24 @@ Copy
 Edit
 python main.py
 ---
-## 🌍 Deployment Notes
-The frontend is deployed on Vercel at:
-🔗 https://batcomputer-flame.vercel.app
+## 🗺️ **Deployment Notes**
 
-The backend (main.py) and Ollama must be running locally for full functionality.
+The frontend is deployed on Vercel at:  
+🔗 [https://batcomputer-flame.vercel.app](https://batcomputer-flame.vercel.app)
 
-If you want global access to the assistant, consider deploying the Flask + Ollama backend to a public server and update main.js with your public backend URL.
+The backend (`main.py`) and Ollama must be running locally for full functionality.
+
+If you want global access to the assistant, consider deploying the Flask + Ollama backend to a public server and update `main.js` with your public backend URL.
+
 ---
-**##Pictures**
-Main Hub:
-<img width="749" alt="Screenshot 2025-06-01 at 8 17 11 PM" src="https://github.com/user-attachments/assets/d78e656f-113a-4fb2-ae5a-c5a0c6ee0637" />
 
-Batcomputer Demo:
-<img width="749" alt="Screenshot 2025-06-01 at 8 17 38 PM" src="https://github.com/user-attachments/assets/5a444080-efe2-437c-add9-f4f3956fcd33" />
+### 📸 **Screenshots**
 
-Batman Personalization:
-<img width="755" alt="Screenshot 2025-06-01 at 8 17 56 PM" src="https://github.com/user-attachments/assets/fe8fdc45-2bfd-4aea-b7f5-8bafc46b60b0" />
+#### 🔧 Main Hub  
+<img width="749" alt="Main Hub" src="https://github.com/user-attachments/assets/d78e656f-113a-4fb2-ae5a-c5a0c6ee0637" />
+
+#### 🦇 Batcomputer Demo  
+<img width="749" alt="Batcomputer Demo" src="https://github.com/user-attachments/assets/5a444080-efe2-437c-add9-f4f3956fcd33" />
+
+#### 🧑‍💻 Batman Personalization  
+<img width="755" alt="Batman Personalization" src="https://github.com/user-attachments/assets/fe8fdc45-2bfd-4aea-b7f5-8bafc46b60b0" />
